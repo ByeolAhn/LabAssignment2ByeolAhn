@@ -22,6 +22,10 @@ exports.productByID = async (req, res, next) => {
     }
 };
 
+exports.read = function (req, res) {
+    res.json(req.user);
+};
+
 //Add new Product
 module.exports.addNew = async (req, res, next) => {
     try {

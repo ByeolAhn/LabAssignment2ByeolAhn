@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 
+var configDB = require('./config/db');
 var app = require('./app');
 var debug = require('debug')('labassignment2byeolahn:server');
 var http = require('http');
