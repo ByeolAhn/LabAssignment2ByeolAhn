@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(bodyParser.json());
 //MongoDB connection
-const dbConfig = require('./config/Database.config');
+const dbConfig = require('./config/database.config');
 const mongoose = require('mongoose');
 
 mongoose.connect(dbConfig.url, {
