@@ -79,10 +79,9 @@ exports.updateById = (req, res) => {
 exports.removeById = (req, res) => {
     ProductSchema.findByIdAndRemove(req.params.id).then(
         prod => {
-            if (!product) {
-                res.status(404).send({
+            if (!prod) {
+                return res.status(404).send({
                     'message': 'There is no product by that id',
-                    'error': err
                 })
             }
             res.send({

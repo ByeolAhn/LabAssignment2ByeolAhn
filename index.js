@@ -18,7 +18,7 @@ mongoose.connect(dbConfig.url, {
 
 app.get('/', (req, res)=>{
     res.json({
-        "message": "Server running"
+        "message": "Welcome to DressStore application."
 
     })
 })
